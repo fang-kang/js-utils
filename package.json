@@ -1,0 +1,59 @@
+{
+  "name": "@fang-kang/js-tool",
+  "private": false,
+  "version": "1.0.0",
+  "packageManager": "pnpm@7.6.0",
+  "description": "This is a tool composed of pure js tool functions",
+  "author": "fangkang<https://github.com/fang-kang>",
+  "license": "MIT",
+  "type": "module",
+  "main": "./lib/index.cjs.js",
+  "module": "./lib/index.es.js",
+  "types": "./lib/types/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "rollup": "rollup -c rollup.config.js",
+    "prepublishOnly": "npm run rollup",
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fang-kang/js-tool"
+  },
+  "homepage": "https://github.com/fang-kang/js-tool/readme",
+  "bugs": {
+    "url": "https://github.com/fang-kang/js-tool/issues"
+  },
+  "keywords": [
+    "js-tool",
+    "js",
+    "utils"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^17.5.0",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@release-it/conventional-changelog": "^5.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.6",
+    "release-it": "^15.9.1",
+    "rollup": "^3.20.1",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.2"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "ES6",
+    "lib": ["ES2018", "ESNext", "DOM"],
+    "declaration": true,
+    "moduleResolution": "node",
+    "declarationDir": "lib/types",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": "./"
+  }
+}
