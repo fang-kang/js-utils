@@ -1,44 +1,42 @@
+type FormatType = 'yyyy' | 'yyyy-MM' | 'yyyy-MM-dd' | 'yyyy-MM-dd HH:mm' | 'yyyy-MM-dd HH:mm:ss';
+
 /**
- * 格式化日期
- * @param datetime
- * @param fmt
- * @returns
+ * 格式化时间
+ * 调用formatDate(strDate, 'yyyy-MM-dd');
+ * @param strDate（中国标准时间、时间戳、Date对象等）
+ * @param strFormat（返回格式）
  */
-export function formateDate(datetime: Date, fmt = 'yyyy-MM-dd') {
-  const o: Record<string, any> = {
-    'M+': datetime.getMonth() + 1, // 月份
-    'd+': datetime.getDate(), // 日
-    'h+': datetime.getHours() % 12 === 0 ? 12 : datetime.getHours() % 12, // 小时
-    'H+': datetime.getHours(), // 小时
-    'm+': datetime.getMinutes(), // 分
-    's+': datetime.getSeconds(), // 秒
-    'q+': Math.floor((datetime.getMonth() + 3) / 3), // 季度
-    S: datetime.getMilliseconds(), // 毫秒
-  };
-  const week: Record<string, string> = {
-    0: '/u65e5',
-    1: '/u4e00',
-    2: '/u4e8c',
-    3: '/u4e09',
-    4: '/u56db',
-    5: '/u4e94',
-    6: '/u516d',
-  };
-  if (/(y+)/.test(fmt)) {
-    fmt = fmt.replace(RegExp.$1, `${datetime.getFullYear()}`.substr(4 - RegExp.$1.length));
+export function formatDate(strDate: string | number | Date, strFormat?: FormatType) {
+  if (!strDate) {
+    return;
   }
-
-  if (/(E+)/.test(fmt)) {
-    fmt = fmt.replace(
-      RegExp.$1,
-      (RegExp.$1.length > 1 ? (RegExp.$1.length > 2 ? '/u661f/u671f' : '/u5468') : '') + week[datetime.getDay()]
-    );
+  if (!strFormat) {
+    strFormat = 'yyyy-MM-dd';
   }
-
-  for (const k in o) {
-    if (new RegExp(`(${k})`).test(fmt)) {
-      fmt = fmt.replace(RegExp.$1, RegExp.$1.length === 1 ? o[k] : `00${o[k]}`.substr(`${o[k]}`.length));
-    }
+  switch (typeof strDate) {
+    case 'string':
+      strDate = new Date(strDate.replace(/-/, '/'));
+      break;
+    case 'number':
+      strDate = new Date(strDate);
+      break;
   }
-  return fmt;
+  if (strDate instanceof Date) {
+    const dict: any = {
+      yyyy: strDate.getFullYear(),
+      M: strDate.getMonth() + 1,
+      d: strDate.getDate(),
+      H: strDate.getHours(),
+      m: strDate.getMinutes(),
+      s: strDate.getSeconds(),
+      MM: ('' + (strDate.getMonth() + 101)).substr(1),
+      dd: ('' + (strDate.getDate() + 100)).substr(1),
+      HH: ('' + (strDate.getHours() + 100)).substr(1),
+      mm: ('' + (strDate.getMinutes() + 100)).substr(1),
+      ss: ('' + (strDate.getSeconds() + 100)).substr(1),
+    };
+    return strFormat.replace(/(yyyy|MM?|dd?|HH?|mm?|ss?)/g, function () {
+      return dict[arguments[0]];
+    });
+  }
 }

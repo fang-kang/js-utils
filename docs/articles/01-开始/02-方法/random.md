@@ -1,0 +1,61 @@
+# random
+
+## randomDate
+
+随机日期函数
+
+```typescript
+import { randomDate } from '@fang-kang/js-utils';
+
+randomDate();
+```
+
+## randomHexColor
+
+随机 hex 颜色
+
+```typescript
+import { randomHexColor } from '@fang-kang/js-utils';
+
+randomHexColor();
+```
+
+## randomRange
+
+获取随机范围值
+
+```typescript
+import { randomRange } from '@fang-kang/js-utils';
+
+randomRange();
+```
+
+## randomRgba
+
+随机 rgba 颜色
+
+```typescript
+import { randomRgba } from '@fang-kang/js-utils';
+
+randomRgba();
+```
+
+## randomStr
+
+随机字符串
+
+```typescript
+import { randomStr } from '@fang-kang/js-utils';
+
+randomStr();
+```
+
+## uuid
+
+生成 uuid
+
+```typescript
+import { uuid } from '@fang-kang/js-utils';
+
+uuid();
+```

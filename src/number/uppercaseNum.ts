@@ -1,7 +1,7 @@
 /**
- * 大写数字
+ * 返回大写人民币
  * @param { number } n 数字
- * @returns 返回大写数字
+ * @returns 返回大写人民币
  */
 export function uppercaseNum(n: number) {
   const fraction = ['角', '分'];

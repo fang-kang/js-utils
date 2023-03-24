@@ -28,6 +28,10 @@ class Calc {
     }
   }
 
+  get _value(): number {
+    return this._value;
+  }
+
   format(p = 2, needZero = true) {
     // 兼容处理非四舍五入保留全精度情况
     const precision = p >= 0 ? Math.min(12, p) : 12;

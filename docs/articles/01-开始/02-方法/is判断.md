@@ -94,7 +94,7 @@ isNull(null); // true
 
 判断是否是对象
 
-内部使用了`typeof value === 'object'`
+内部使用了 `value !== null && typeof value === 'object'`
 
 ```typescript
 import { isObject } from '@fang-kang/js-utils';
@@ -128,7 +128,7 @@ isPlainObject(null); // false
 
 ```typescript
 import { isPromise } from '@fang-kang/js-utils';
-isPromise(new Promise()); // true
+isPromise(Promise.resove(1)); // true
 ```
 
 ## isString
@@ -189,4 +189,34 @@ isUrl('http://www.baidu.com'); // true
 import { isEven } from '@fang-kang/js-utils';
 
 isEven(1); // 否
+```
+
+## isPrimitive
+
+判断是否是原始类型
+
+```typescript
+import { isPrimitive } from '@fang-kang/js-utils';
+
+isPrimitive(1); // true
+```
+
+## isTrue
+
+判断是否 === true
+
+```typescript
+import { isTrue } from '@fang-kang/js-utils';
+
+isTrue(1); // false
+```
+
+## isFalse
+
+判断是否 === false
+
+```typescript
+import { isFalse } from '@fang-kang/js-utils';
+
+isFalse(0); // false
 ```

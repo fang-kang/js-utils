@@ -1,6 +1,7 @@
 export * from './addClass';
 export * from './exitFullscreen';
 export * from './fullScreen';
+export * from './getOs';
 export * from './getScrollTop';
 export * from './getUrlParams';
 export * from './hasClass';

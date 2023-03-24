@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../node_modules/.pnpm/vite-plugin-vitepress-demo@2.0.0-alpha.8_vitepress@1.0.0-alpha.61/node_modules/vite-plugin-vitepress-demo/dist/theme/index.mjs"],
-  "sourcesContent": ["import AntdTheme from \"./antd/index.vue\";\nimport DefaultTheme from \"./default/index.vue\";\nexport {\n  AntdTheme,\n  DefaultTheme\n};\nexport default DefaultTheme;\n"],
-  "mappings": ";AAAA,OAAO,eAAe;AACtB,OAAO,kBAAkB;AAKzB,IAAO,gBAAQ;",
-  "names": []
-}

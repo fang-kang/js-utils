@@ -9,6 +9,7 @@
   "type": "module",
   "main": "./lib/index.cjs.js",
   "module": "./lib/index.es.js",
+  "browser": "./lib/index.umd.js",
   "types": "./lib/types/index.d.ts",
   "files": [
     "lib"
@@ -39,6 +40,7 @@
     "@commitlint/cli": "^17.5.0",
     "@commitlint/config-conventional": "^17.4.4",
     "@release-it/conventional-changelog": "^5.1.1",
+    "@rollup/plugin-terser": "^0.4.0",
     "@types/markdown-it": "^12.2.3",
     "@types/node": "^18.15.6",
     "@typescript-eslint/eslint-plugin": "^5.56.0",
@@ -60,7 +62,6 @@
     "tslib": "^2.5.0",
     "typescript": "^5.0.2",
     "vite": "^4.2.1",
-    "vite-plugin-vitepress-demo": "2.0.0-alpha.8",
     "vitepress": "1.0.0-alpha.61",
     "vitepress-plugin-search": "1.0.4-alpha.19"
   },

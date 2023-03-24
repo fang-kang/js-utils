@@ -1,6 +1,5 @@
 import { ConfigEnv, defineConfig } from 'vite';
 import { SearchPlugin } from 'vitepress-plugin-search';
-import { VitePluginVitepressDemo } from 'vite-plugin-vitepress-demo';
 import flexSearchIndexOptions from 'flexsearch';
 import { resolve } from 'path';
 
@@ -10,7 +9,6 @@ export default defineConfig((env: ConfigEnv) => {
       chunkSizeWarningLimit: 4096,
     },
     plugins: [
-      VitePluginVitepressDemo({ glob: './**/demo/**/*.{vue,jsx,tsx,js,ts}' }),
       [
         SearchPlugin({
           ...flexSearchIndexOptions,

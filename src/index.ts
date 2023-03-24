@@ -5,7 +5,7 @@ export * from './browser';
 export * from './is';
 export * from './js';
 export * from './number';
+export * from './random';
 export * from './storage';
 export * from './string';
 export * from './to';
-export * from './uuid';

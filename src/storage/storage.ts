@@ -5,7 +5,7 @@ const InfinityTime = -1;
 type StorageType = 'localStorage' | 'sessionStorage';
 
 class Storage {
-  storageType: StorageType;
+  private storageType: StorageType;
   constructor(storageType: StorageType) {
     this.storageType = storageType;
   }

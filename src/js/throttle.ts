@@ -25,7 +25,7 @@ export function throttle(func: Function, wait: number = 500, immediate: boolean 
       // 如果是非立即执行，则在wait毫秒内的结束处执行
       timer = setTimeout(() => {
         flag = false;
-        typeof isFn(func) && func();
+        isFn(func) && func();
       }, wait);
     }
   }
