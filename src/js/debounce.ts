@@ -1,6 +1,6 @@
 import { isFn } from '../is';
 
-let timeout: number | null | undefined = null;
+let timeout: NodeJS.Timeout | null = null;
 
 /**
  * 防抖原理：一定时间内，只有最后一次操作，再过wait毫秒后才执行函数

@@ -1,0 +1,29 @@
+# storage & cookie
+
+## storage
+
+缓存
+
+```typescript
+import { LocalStorage, SessionStorage } from '@fang-kang/js-utils';
+
+LocalStorage.set('test', { a: 1 });
+LocalStorage.get('test');
+LocalStorage.del('test');
+LocalStorage.clear();
+
+// 设置1天的过期时间 过期则清空对应key数据
+LocalStorage.set('ACCESS_TOKEN', 'token-xxx', 1 * 24 * 60 * 60 * 1000);
+```
+
+## cookie
+
+cookie 操作
+
+```typescript
+import { cookie } from '@fang-kang/js-utils';
+
+cookie.set('test', 1);
+cookie.get('test');
+cookie.del('test');
+```

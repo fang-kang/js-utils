@@ -4,7 +4,7 @@
  * prop：排序的依据字段
  * order：默认true -> 正序（小 -> 大） / false -> 倒序（大 -> 小）
  */
-export const sortCompare = (arr: any[], prop: any, order = true) => {
+export const sortCompare = (arr: any[], prop: string | number, order = true) => {
   return arr.sort(compare(prop, order));
 };
 

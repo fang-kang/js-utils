@@ -1,4 +1,4 @@
-interface IParams<T = any> {
+interface IParams {
   arr: any[];
   idKey?: string;
   parentKey?: string;
@@ -11,7 +11,7 @@ interface IParams<T = any> {
  * @param params
  * @returns
  */
-export function arrayToTree<T = any>(params: IParams<T>) {
+export function arrayToTree(params: IParams) {
   const { arr, idKey = 'id', parentKey = 'pid', childrenKey = 'children', rootId = 0 } = params;
   const result: any[] = [];
   const itemMap: Record<string, any> = {};
