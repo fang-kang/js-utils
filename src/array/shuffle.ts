@@ -4,8 +4,8 @@
  * @returns
  */
 export function shuffle(arr: any[]) {
-  let result = [],
-    random;
+  let result: any[] = [],
+    random: number;
   while (arr.length > 0) {
     random = Math.floor(Math.random() * arr.length);
     result.push(arr[random]);

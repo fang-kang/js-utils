@@ -5,7 +5,7 @@
  */
 export function stringfyQueryString(obj: Record<string, any>) {
   if (!obj) return '';
-  const pairs = [];
+  const pairs: any[] = [];
 
   for (let key in obj) {
     let value = obj[key];

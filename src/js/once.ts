@@ -3,13 +3,12 @@
  * @param fn
  * @returns
  */
-export const once = (fn: Function) => {
+export function once(fn: Function): Function {
   let called = false;
-  let _this = this;
   return function () {
     if (!called) {
       called = true;
-      fn.apply(_this, arguments);
+      fn.apply(this, arguments);
     }
   };
-};
+}

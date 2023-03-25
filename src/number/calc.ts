@@ -16,7 +16,7 @@ const SPLIT_REG = /(@?\d+(\.\d+)?)|[+\-*/()]/g;
 const NEGATIVE_REG = /([+\-*/])(-)/g;
 
 class Calc {
-  private value: number = 0;
+  value: number = 0;
 
   constructor(str: string) {
     try {
@@ -26,10 +26,6 @@ class Calc {
     } catch (error) {
       //
     }
-  }
-
-  get _value(): number {
-    return this._value;
   }
 
   format(p = 2, needZero = true) {

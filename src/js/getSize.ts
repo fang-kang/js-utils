@@ -1,5 +1,4 @@
-import { isString } from 'markdown-it/lib/common/utils';
-import { isArray, isObject } from 'src/is';
+import { isArray, isObject, isString } from 'src/is';
 
 /**
  * 获取不同类型变量的长度

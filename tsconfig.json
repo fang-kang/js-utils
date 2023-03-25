@@ -9,7 +9,7 @@
     "declarationDir": "lib/types",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": true,
+    "strict": false,
     "strictNullChecks": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,

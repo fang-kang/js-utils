@@ -7,7 +7,7 @@ import { isNum } from '../is/isNum';
  */
 export function uuid(len?: number, radix?: number | 'hex') {
   const chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.split('');
-  const uuid = [];
+  const uuid: string[] = [];
   radix = radix || chars.length;
   if (len) {
     const num = isNum(radix) ? (radix as number) : 36;
