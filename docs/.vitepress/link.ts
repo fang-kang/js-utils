@@ -3,7 +3,7 @@ import { DefaultTheme } from 'vitepress';
 const socialLinks = [
   {
     icon: 'github',
-    link: 'https://github.com/fang-kang/@fang-kang/js-utils',
+    link: 'https://fang-kang.github.io/js-utils',
   },
 ] as DefaultTheme.SocialLink[];
 
