@@ -68,3 +68,12 @@ html.dark {
 .DocSearch-Button:hover {
   background-color: #f5f5f6;
 }
+
+.guide {
+  display: flex;
+}
+
+.guide a,
+.guide img {
+  margin-right: 5px;
+}

@@ -220,3 +220,176 @@ import { isFalse } from '@fang-kang/js-utils';
 
 isFalse(0); // false
 ```
+
+## isFullScreen
+
+判断当前是否全屏
+
+```typescript
+import { isFullScreen } from '@fang-kang/js-utils';
+
+isFullScreen();
+```
+
+## isMobile
+
+判断是否为移动端
+
+```typescript
+import { isMobile } from '@fang-kang/js-utils';
+
+isMobile();
+```
+
+## isWeiXin
+
+判断网页访问端是否为微信浏览器
+
+```typescript
+import { isWeiXin } from '@fang-kang/js-utils';
+
+isWeiXin();
+```
+
+## isQQBrowser
+
+判断网页访问端是否是 QQ 浏览器
+
+```typescript
+import { isQQBrowser } from '@fang-kang/js-utils';
+
+isQQBrowser();
+```
+
+## isAndroid
+
+判断是否为安卓
+
+```typescript
+import { isAndroid } from '@fang-kang/js-utils';
+
+isAndroid();
+```
+
+## isIOS
+
+判断是否为 IOS
+
+```typescript
+import { isIOS } from '@fang-kang/js-utils';
+
+isIOS();
+```
+
+## isDate
+
+判断是否是时间
+
+```typescript
+import { isDate } from '@fang-kang/js-utils';
+
+isDate(new Date()); // true
+```
+
+## isRegExp
+
+判断是否为正则
+
+```typescript
+import { isRegExp } from '@fang-kang/js-utils';
+
+isRegExp(/^([0-9]{3,4}-)?[0-9]{7,8}$/); // true
+```
+
+## isError
+
+判断是否是错误对象
+
+```typescript
+import { isError } from '@fang-kang/js-utils';
+
+isError(new Error()); // true
+```
+
+## isSet
+
+判断是否 Set 对象
+
+```typescript
+import { isSet } from '@fang-kang/js-utils';
+
+isSet(new Set()); // true
+```
+
+## isSpider
+
+判断是否是爬虫
+
+```typescript
+import { isSpider } from '@fang-kang/js-utils';
+
+isSpider();
+```
+
+## isPC
+
+判断是否为 PC 端
+
+```typescript
+import { isPC } from '@fang-kang/js-utils';
+
+isPC();
+```
+
+## isChrome
+
+判断是否为 Chrome
+
+```typescript
+import { isChrome } from '@fang-kang/js-utils';
+
+isChrome();
+```
+
+## isSafari
+
+判断是否为 Safari
+
+```typescript
+import { isSafari } from '@fang-kang/js-utils';
+
+isSafari();
+```
+
+## isIE
+
+判断是否是 IE 浏览器
+
+```typescript
+import { isIE } from '@fang-kang/js-utils';
+
+isIE();
+```
+
+## isBrowser
+
+检查是否为浏览器环境
+
+可用于确定当前运行时环境是否为浏览器。这有助于避免在服务器（节点）上运行前端模块时出错。
+
+```typescript
+import { isBrowser } from '@fang-kang/js-utils';
+
+isBrowser(); // true (browser)
+isBrowser(); // false (Node)
+```
+
+## isBrowserTabFocused
+
+检查当前标签页是否活动
+
+```typescript
+import { isBrowserTabFocused } from '@fang-kang/js-utils';
+
+isBrowserTabFocused();
+```

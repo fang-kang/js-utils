@@ -59,3 +59,13 @@ import { uuid } from '@fang-kang/js-utils';
 
 uuid();
 ```
+
+## randomNumber
+
+随机数字，取值范围[min, max]。 min 默认 0，max 默认 1000
+
+```typescript
+import { randomNumber } from '@fang-kang/js-utils';
+
+randomNumber();
+```

@@ -101,3 +101,45 @@ async function test() {
 
 test();
 ```
+
+## timeTaken
+
+计算函数执行时间
+
+```typescript
+import { timeTaken } from '@fang-kang/js-utils';
+
+timeTaken(() => Math.pow(2, 10)); // 1024, (logged): timeTaken: 0.02099609375ms
+```
+
+## memoize
+
+缓存函数
+
+```typescript
+import { memoize } from '@fang-kang/js-utils';
+
+memoize();
+```
+
+## once
+
+只调用一次的函数
+
+```typescript
+import { once } from '@fang-kang/js-utils';
+
+once();
+```
+
+## getSize
+
+获取不同类型变量的长度
+
+```typescript
+import { getSize } from '@fang-kang/js-utils';
+
+getSize([1, 2, 3, 4, 5]); // 5
+getSize('size'); // 4
+getSize({ one: 1, two: 2, three: 3 }); // 3
+```

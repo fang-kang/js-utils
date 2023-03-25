@@ -13,7 +13,7 @@ interface IParams {
  * @param param
  * @returns
  */
-export function getArrayValue({
+export function getArrayLabelByValue({
   arr,
   value,
   valueKey = 'value',

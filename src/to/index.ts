@@ -2,6 +2,7 @@ export * from './arraytoTree';
 export * from './base64ToBlob';
 export * from './base64ToFile';
 export * from './blobToUrl';
+export * from './byteToFileSize';
 export * from './fileToArrayBuffer';
 export * from './fileToBlob';
 export * from './hexToRgb';

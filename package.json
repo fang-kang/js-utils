@@ -15,7 +15,8 @@
     "lib"
   ],
   "scripts": {
-    "rollup": "rollup -c rollup.config.js",
+    "rollup": "npm run clean && rollup -c rollup.config.js",
+    "clean": "rimraf ./lib",
     "prepublishOnly": "npm run rollup",
     "release": "release-it",
     "docs:dev": "vitepress dev docs --port 3100",
@@ -57,6 +58,7 @@
     "markdown-it-custom-attrs": "^1.0.2",
     "prettier": "^2.8.6",
     "release-it": "^15.9.1",
+    "rimraf": "^4.4.1",
     "rollup": "^3.20.1",
     "rollup-plugin-typescript2": "^0.34.1",
     "tslib": "^2.5.0",

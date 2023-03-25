@@ -15,7 +15,12 @@ export default {
     {
       file: './lib/index.umd.js',
       format: 'umd',
-      name: 'fragment',
+      name: 'JsUtils',
+    },
+    {
+      file: './lib/index.iife.js',
+      format: 'iife',
+      name: 'JsUtils',
     },
   ],
   plugins: [
