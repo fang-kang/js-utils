@@ -17,11 +17,6 @@ export default {
       format: 'umd',
       name: 'JsUtils',
     },
-    {
-      file: './lib/index.iife.js',
-      format: 'iife',
-      name: 'JsUtils',
-    },
   ],
   plugins: [
     terser(),
