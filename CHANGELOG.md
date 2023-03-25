@@ -1,5 +1,12 @@
 
 
+## [1.0.3](https://github.com/fang-kang/js-utils/compare/1.0.2...1.0.3) (2023-03-25)
+
+
+### Bug Fixes
+
+* **getSize、calc、once:** fix bug ([c60fca6](https://github.com/fang-kang/js-utils/commit/c60fca6c65abd8bccbec36aab9b4b8a16f44b08f))
+
 ## [1.0.2](https://github.com/fang-kang/js-utils/compare/1.0.1...1.0.2) (2023-03-25)
 
 
