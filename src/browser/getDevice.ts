@@ -1,4 +1,7 @@
-import type { DeviceType } from '../types';
+export interface DeviceType {
+  os: string;
+  dev: string;
+}
 
 /**
  * 获取当前环境设备信息 os 手机设备 dev 浏览器环境

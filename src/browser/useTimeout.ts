@@ -1,5 +1,6 @@
 import { isFn } from '../is/isFn';
-import type { UseTimeoutReturn } from '../types';
+
+export type UseTimeoutReturn<T> = T extends Function ? () => void : undefined;
 
 /**
  * setTimeout
