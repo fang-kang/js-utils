@@ -8,7 +8,7 @@
   --vp-home-hero-image-filter: blur(150px);
   --vp-home-hero-image-background-image: linear-gradient(45deg, #ecaf07ea 50%, #c6715b 50%);
   --vp-home-hero-name-background: linear-gradient(45deg, #ecaf07ea, #c6715b);
-  --vp-c-bg-alpha-with-backdrop: transparent;
+  --vp-c-bg-alpha-with-backdrop: rgba(255, 255, 255, 0.7);
 }
 
 html .dark {
@@ -65,4 +65,13 @@ html .dark {
 .user-img:hover {
   transition: all 1s;
   transform: rotate(360deg);
+}
+
+.VPNavBar .content-body {
+  backdrop-filter: saturate(50%) blur(8px);
+  background-color: var(--vp-c-bg-alpha-with-backdrop) !important;
+}
+
+.VPNavBar .curtain {
+  display: none !important;
 }
