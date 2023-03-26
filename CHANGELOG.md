@@ -1,5 +1,12 @@
 
 
+## [1.0.4](https://github.com/fang-kang/js-utils/compare/1.0.3...1.0.4) (2023-03-26)
+
+
+### Features
+
+* update method ([205ade8](https://github.com/fang-kang/js-utils/commit/205ade8450a00a5841a5c95c786c8102a9605590))
+
 ## [1.0.3](https://github.com/fang-kang/js-utils/compare/1.0.2...1.0.3) (2023-03-25)
 
 
