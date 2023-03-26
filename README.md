@@ -10,7 +10,7 @@
 
 ## 🚀 What is js-utils？
 
-@fang-kang/js-utils，是一个纯 javascript 实现的开箱即用工具库,主要用于简化开发过程，提高开发效率。
+@fang-kang/js-utils，Is an out of the box tool library implemented in pure javascript, mainly used to simplify the development process and improve development efficiency
 
 ## 🦄 Usage
 

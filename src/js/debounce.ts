@@ -1,4 +1,4 @@
-import { isFn } from '../is';
+import { isFn, isNull } from '../is';
 
 let timeout: NodeJS.Timeout | null = null;
 
@@ -12,7 +12,7 @@ let timeout: NodeJS.Timeout | null = null;
  */
 export function debounce(func: Function, wait: number = 500, immediate: boolean = false) {
   // 清除定时器
-  if (timeout !== null) clearTimeout(timeout);
+  if (!isNull(timeout)) clearTimeout(timeout);
   // 立即执行，此类情况一般用不到
   if (immediate) {
     let callNow = !timeout;

@@ -1,5 +1,13 @@
 # 更新日志
 
+## v1.0.4(2023-03-26)
+
+- `isEmpty` 添加判断对象为空的情况
+- 添加`isAbsolute`、`isBase64`、`isBlob`、`isBottom`、`isCalc`、`isComment`、`isContainCn`、`isDivElement`、`isElement`、 `isEqual`、`isEsModule`、`isExist`、`isFile`、`isFileType`、`isIFrameElement`、`isImageElement`、`isIPv4`、`isIPv6`、`isKeyOf`、`isLeapYear`、`isMap`、`isNameCn`、`isNameEn`、`isNaN`、`isNullOrUndefined`、`isNm`、`isNode`、`isOnline`、`isPercent`、`isPostCode`、`isPx`、`isRelative`、`isRem`、`isSameDay`、`isScriptElement`、`isShadowRoot`、 `isSocketUrl`
+  、`isSoldierId`、`isStyleElement`、`isSupportCamera`、`isSupportWebp`、`isTrainNumber`、`isVar`、`isVersion`、`isVh`、`isVideo`、`isVue`、`isVw`、`isWeakMap`、`isWeakSet`、`isWritable`、`getDevice`、`monitorPef`、`timeCost`
+  、`createElement`、`toAbsolutePath`、`toBase64`、`toObject`、`toPxNum`、`createElement`、`createFragment`、`createTextNode`、`findElement`、`removeElement`、`useInterval`、`useTimeout`
+- 删除 `getOs`
+
 ## v1.0.3(2023-03-25)
 
 - 修复`calc`、`once`、`getSize` bug

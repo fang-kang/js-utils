@@ -1,5 +1,6 @@
 import typescript from 'rollup-plugin-typescript2';
 import terser from '@rollup/plugin-terser';
+import nodePolyfills from 'rollup-plugin-polyfill-node';
 
 export default {
   input: './src/index.ts',
@@ -20,6 +21,7 @@ export default {
   ],
   plugins: [
     terser(),
+    nodePolyfills(),
     typescript({
       tsconfigOverride: {
         compilerOptions: {
