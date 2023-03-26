@@ -75,3 +75,7 @@ html .dark {
 .VPNavBar .curtain {
   display: none !important;
 }
+
+html.dark .VPNavBar .content-body {
+  background: rgba(36, 36, 36, 0.7) !important;
+}
